@@ -7,7 +7,7 @@ console.log(3+
 
 console.log("Rajneesh")
 
-let name = "hitesh"
+let name = "Rajneesh"
 let age = 18
 let isLoggedIn = false
 
