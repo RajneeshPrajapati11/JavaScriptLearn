@@ -40,3 +40,38 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber)
+
+
+// ********************** Operations *****************
+
+let value =3
+let negValue = -value
+console.log(negValue)// -3 print krdega terminal pr
+
+// console.log(2+3)
+// console.log(2%3)
+// console.log(2*3)
+// console.log(2/3)
+// console.log(2-3)
+// console.log(2%3)
+
+
+let str1 = "hello"
+let str2 = " Rajneesh"
+let str3 = str1+str2
+console.log(str3)
+
+//now some tricky ones....
+console.log("1"+2)
+console.log(1+"2")
+console.log("1"+"2")// sbka output same aara hai 12
+//lekin ab ek dusri situation lete hai
+console.log("1"+2+2)//ab output 122 aara hai mtlb last k 2 toh number the but unka addition nahi hua
+
+// lekin ab ek or interesting thing
+
+console.log(1+2+"2")// lekin ab iska output 32 aara hai
+// isko refer kro or jaanne k liye
+//https://tc39.es/ecma262/#sec-toprimitive
+
+
