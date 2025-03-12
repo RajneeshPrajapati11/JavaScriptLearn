@@ -74,4 +74,17 @@ console.log(1+2+"2")// lekin ab iska output 32 aara hai
 // isko refer kro or jaanne k liye
 //https://tc39.es/ecma262/#sec-toprimitive
 
+console.log(true)
+console.log(+true)//iska output 1 dega
+//console.log(true+)ispe error dega
+console.log(+"")//iska output 0 dega but aise conversions nahi karne chahiyeh.
+
+let num1,num2,num3
+
+num1 = num2 = num3 =2+2 // aisaa nhi likhenge kyoki coding k andar readablity sabse important hoti hai.
+
+let gameCounter = 100
+++gameCounter//gameCounter++
+//prefix or postfix ---> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+console.log(gameCounter);
 
