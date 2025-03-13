@@ -38,3 +38,29 @@ console.log(typeof bigNumber)
 console.log(typeof myfunction)//output "function" aata hai but deeply padhne pe pata chalega usko object function bolte hai.
 
 //typeof function ko Ecma web se padhna hai interview mai poocha jaata hai
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(primitive), Heap(Non-primitive)
+
+let myYoutubename ="rajneeshprajapati"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anothername)// stack k andar copy mai change hota hai na ki actual value mai
+
+// another example(now for heap)
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne//yaha pe ek jagah ka reference diya jaa raha but stack mai ek copy di jaa rahi thi uski
+
+userTwo.email = "rajneesh@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)// same hi value aayegi kyoki reference pe change hua hai naa isliyeh
