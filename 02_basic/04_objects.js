@@ -17,7 +17,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.firstname)// chaining krk access bhi krskte hai...
+// console.log(regularUser.fullname.firstname)// chaining krk access bhi krskte hai...
 
 
 const obj1 = {1:"a",2:"b"}
@@ -32,7 +32,7 @@ const obj2 = {3:"a",4:"b"}
 
 const obj3 ={...obj1,...obj2}
 
-console.log(obj3)
+// console.log(obj3)
 
 
 const users = [
@@ -55,12 +55,48 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser))//important baat yeh hai ki output as a array milta hai jisko hum manipulate krskte hai baad mai...
-console.log(Object.values(tinderUser))
+// console.log(Object.keys(tinderUser))//important baat yeh hai ki output as a array milta hai jisko hum manipulate krskte hai baad mai...
+// console.log(Object.values(tinderUser))
 
-console.log(Object.entries(tinderUser))
+// console.log(Object.entries(tinderUser))
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))//true
-console.log(tinderUser.hasOwnProperty('isLogged'))//false
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))//true
+// console.log(tinderUser.hasOwnProperty('isLogged'))//false
+
+
+// Object de-structure
+
+const course = {
+    coursename: "js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+// course.courseInstructor//ab suppose hume yeh hi chiz baar baar call krni hai tohh itna bada syntax thodi likhenge ....
+
+const {courseInstructor:Instructor}= course
+
+console.log(Instructor)
+
+
+// Json--api
+
+// {
+//     "name":"Rajneesh",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }// key or value dono string type mai mention krni padti hai--- or iska koi naam nahi hota.
+
+
+// or kai baar api array ki form mai bhi milti hai
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+
+
