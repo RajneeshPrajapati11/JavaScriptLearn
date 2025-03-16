@@ -23,7 +23,51 @@ if(true){
     let a = 10
     const b = 20
     var c = 30
-    console.log("inner",a)
+    // console.log("inner",a)
 }
 
-console.log("outer",a)
+// console.log("outer",a)
+
+function one(){
+    const username ="hitesh"
+    
+    function two(){
+        const website ="youtube"
+        console.log(username)
+    }
+
+    // console.log(website)// error dega local scope se bahar access krrahe haina isliyeh
+    two()
+}
+
+// one()
+
+
+// if(true){
+//     const username ="Rajneesh"
+//     if(username==="Rajneesh"){
+//         const website ="youtube"
+//         console.log(username + website)
+//     }
+//     // console.log(website)// error dega--> scope se bahar hai
+// }
+// console.log(username);// error dega--> scope se bahar hai
+
+
+// ++++++++++++++++++ interesting +++++++++++++++++++
+
+console.log(addone(5))// function ki declaration se pahale
+
+function addone(num){
+    return num + 1
+}
+
+
+addTwo(5)//agr function alg tarike se declare hai maanlo yaha pe declare krne k baad ek variable mai tab agr hum usse pahale call krenge tab problem hoaga.Cannot access 'addTwo' before initialization
+// hoistiiiiiinggggggggggggggggggggg
+const addTwo = function(num){
+    return num+2
+}
+
+
+
